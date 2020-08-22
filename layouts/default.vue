@@ -16,6 +16,22 @@ export default {
   components: {
     Header,
   },
+  methods: {
+    getStylesheetUrl() {
+      const subdomain = window.location.host.split('.')[0]
+      return `/platform/${subdomain}/colors.css`
+    },
+  },
+  head() {
+    return {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: this.getStylesheetUrl(),
+        },
+      ],
+    }
+  },
 }
 </script>
 <style lang="scss">
@@ -30,8 +46,8 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   body {
-    background-color: $primary-color;
-    color: $text-color;
+    background-color: var(--primary-color);
+    color: var(--text-color);
   }
 }
 
@@ -44,7 +60,7 @@ html {
 main {
   position: absolute;
   top: 4rem;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   width: 100%;
 }
 </style>

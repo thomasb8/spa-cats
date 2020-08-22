@@ -49,7 +49,7 @@ export default {
   .card ::v-deep {
     height: 100%;
     a {
-      color: $text-color;
+      color: var(--text-color);
       margin-bottom: 1rem;
     }
   }
