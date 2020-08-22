@@ -4,7 +4,8 @@
       <div
         v-for="post in posts"
         :key="post.id"
-        class="col-12 col-md-4 card-container"
+        :class="$platform.homepageCardSizeClasses"
+        class="card-container"
       >
         <b-card class="card" :img-src="getThumbnail(post)">
           <b-card-title>

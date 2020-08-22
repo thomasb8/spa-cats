@@ -28,7 +28,7 @@ export default {
   },
 
   publicRuntimeConfig: {
-    platform: process.env.PLATFORM
+    platform: process.env.PLATFORM,
   },
   /*
    ** Global CSS
@@ -44,7 +44,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '~/plugins/api.js' }],
+  plugins: [{ src: '~/plugins/api.js' }, { src: '~/plugins/platform.js' }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
