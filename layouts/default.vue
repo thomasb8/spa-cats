@@ -18,8 +18,7 @@ export default {
   },
   methods: {
     getStylesheetUrl() {
-      const subdomain = window.location.host.split('.')[0]
-      return `/platform/${subdomain}/colors.css`
+      return `/platform/${this.$config.platform}/colors.css`
     },
   },
   head() {
