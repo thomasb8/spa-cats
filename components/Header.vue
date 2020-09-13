@@ -1,7 +1,7 @@
 <template>
   <header>
     <nuxt-link to="/">
-      <img v-if="$platform.showLogo" src="/header-logo.jpg" />
+      <img v-if="$platform.styles('header.showLogo')" src="/header-logo.jpg" />
     </nuxt-link>
   </header>
 </template>

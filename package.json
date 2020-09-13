@@ -15,7 +15,8 @@
     "@nuxtjs/axios": "^5.12.1",
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "lodash": "latest"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
