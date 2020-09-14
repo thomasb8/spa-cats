@@ -13,7 +13,6 @@ header {
   position: fixed;
   height: 4rem;
   background-color: var(--secondary-color);
-  color: var(--secondary-text-color);
   width: 100%;
   z-index: 99;
   top: 0;

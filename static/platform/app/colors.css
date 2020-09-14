@@ -1,6 +1,9 @@
 :root {
-    --primary-color: #222222;
-    --secondary-color: #FFFFFF;
-    --text-color: #888888;
-    --secondary-text-color: #222222;
+    --primary-color-values: 58, 51, 53;
+    --primary-color: rgb(var(--primary-color-values));
+    --secondary-color-values: 253, 240, 213;
+    --secondary-color: rgb(var(--secondary-color-values));
+    --card-color: rgb(var(--secondary-color-values));
+    --card-color-hover: rgba(var(--secondary-color-values), 0.8);
+    --text-color: #232323;
 }

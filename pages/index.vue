@@ -47,11 +47,20 @@ export default {
 <style lang="scss" scoped>
 .card-container {
   margin-bottom: 1rem;
-  .card ::v-deep {
+  .card {
     height: 100%;
-    a {
-      color: var(--text-color);
-      margin-bottom: 1rem;
+    background-color: var(--card-color);
+    &:hover {
+      background: var(--card-color-hover);
+    }
+    ::v-deep {
+      a {
+        color: var(--text-color);
+        margin-bottom: 1rem;
+      }
+      .text-muted {
+        color: var(--text-color) !important;
+      }
     }
   }
 }
